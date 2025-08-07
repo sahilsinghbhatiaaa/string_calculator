@@ -17,3 +17,9 @@ def test_string_with_whitespace_delimiter():
 
 def test_string_with_comma_delimiter():
     assert add("1,2,3") == 6
+
+def test_newline_between_numbers():
+    assert add("1\n2,3") == 6
+
+def test_custom_delimiter():
+    assert add("//;\n1;2") == 3
