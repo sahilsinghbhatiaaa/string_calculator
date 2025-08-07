@@ -14,3 +14,6 @@ def test_single_num_string_returns_num():
 
 def test_string_with_whitespace_delimiter():
     assert add("1 2") == 3
+
+def test_string_with_comma_delimiter():
+    assert add("1,2,3") == 6
