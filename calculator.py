@@ -11,6 +11,12 @@ def add(numbers):
 
     delimiters = [",", "\n", " "]
 
+    if numbers.startswith("//"):
+        parts = numbers.split("\n", 1)
+        custom_delimiter = parts[0][2:]
+        numbers = parts[1]
+        delimiters = [custom_delimiter]
+
     for delimiter in delimiters:
         numbers = numbers.replace(delimiter, ",")
 
