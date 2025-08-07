@@ -4,6 +4,8 @@ Failing test first
 Writing that make test pass
 Refactor to improve it
 '''
+import pytest
+
 from calculator import add
 
 def test_empty_string_returns_zero():
@@ -23,3 +25,7 @@ def test_newline_between_numbers():
 
 def test_custom_delimiter():
     assert add("//;\n1;2") == 3
+
+def test_negative_number_raises():
+    with pytest.raises(ValueError, match="negative numbers not allowed -1"):
+        add("-1")

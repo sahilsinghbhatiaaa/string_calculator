@@ -1,0 +1,9 @@
+.idea/.gitignore
+.idea/inspectionProfiles/Project_Default.xml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/string_calculator.iml
+.idea/vcs.xml
+__pycache__/calculator.cpython-313.pyc
+__pycache__/test_calculator.cpython-313.pyc
